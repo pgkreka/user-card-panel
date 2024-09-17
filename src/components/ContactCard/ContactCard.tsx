@@ -3,9 +3,11 @@ import { Card, CardContent, Typography, IconButton, Box } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ContactModal from '../ContactModal/ContactModal';
 import { Contact } from '../../types'; // Importing Contact interface from types
+import supervisorIcon from '../../assets/icons/icon-supervisor.svg';
+import styles from './../../components/ContactCard/ContactCard.module.css';
 
 interface ContactCardProps {
-    contact: Contact;  // Accept the Contact type as a prop
+    contact: Contact;
     open: boolean;
     handleClose: () => void;
 }
@@ -18,7 +20,7 @@ export default function ContactCard({ contact }: ContactCardProps) {
 
   return (
     <>
-      <Card variant="outlined" sx={{ m: 2, boxShadow: 3, position: 'relative' }}>
+      <Card className={styles.cardStyle} variant="outlined" sx={{ m: 2, boxShadow: 3, position: 'relative' }}>
         <CardContent>
           <Typography variant="h6" component="div">
             {contact.name}
@@ -29,9 +31,9 @@ export default function ContactCard({ contact }: ContactCardProps) {
           <Typography color="text.secondary">E-mail: {contact.email}</Typography>
         </CardContent>
         <Box position="absolute" bottom={10} right={10}>
-          <IconButton onClick={handleOpen}>
-            <SearchIcon sx={{ fontSize: 40, color: '#00acc1' }} />
-          </IconButton>
+          <div className="icon" onClick={handleOpen}>
+            <img src={supervisorIcon} alt="magnifier icon" />
+          </div>
         </Box>
       </Card>
 
