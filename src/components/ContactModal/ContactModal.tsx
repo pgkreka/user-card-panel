@@ -3,7 +3,7 @@ import { Modal, Box, Typography, IconButton } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import CloseIcon from '@mui/icons-material/Close';
 import { Contact } from '../../types'; // Importing Contact interface from types
-import styles from './../../components/ContactModal/ContactModal.module.css'; // Import the CSS module
+import styles from './../../components/ContactModal/ContactModal.module.css';
 
 interface ContactModalProps {
   contact: Contact | null;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Typography, CircularProgress, Alert } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import ContactCard from './components/ContactCard/ContactCard';
-import { fetchContacts } from './services/users'; // Import the API function
+import { fetchContacts } from './services/usersAPI'; // Import the API function
 import { Contact } from './types';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     // Fetch contacts from the API
     const loadContacts = async () => {
       try {
-        const data = await fetchContacts();  // Use the function from users.js
+        const data = await fetchContacts();  // Use the function from usersAPI.js
         setContacts(data);
         setLoading(false);
       } catch (err: any) {

@@ -1,4 +1,3 @@
-// src/types.ts
 export interface Geo {
     lat: string;
     lng: string;
