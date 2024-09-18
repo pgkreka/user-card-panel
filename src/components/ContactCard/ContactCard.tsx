@@ -20,7 +20,7 @@ export default function ContactCard({ contact }: ContactCardProps) {
 
   return (
     <>
-      <Card className={styles.cardStyle} variant="outlined" sx={{ m: 2, boxShadow: 3, position: 'relative' }}>
+      <Card className={styles.cardStyle} variant="outlined" sx={{ m: 2, borderTop: '3px solid rgba(69, 211, 211, 1)' }}>
         <CardContent>
           <Typography variant="h6" component="div">
             {contact.name}
