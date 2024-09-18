@@ -7,9 +7,9 @@ import supervisorIcon from '../../assets/icons/icon-supervisor.svg';
 import styles from './../../components/ContactCard/ContactCard.module.css';
 
 interface ContactCardProps {
-    contact: Contact;
-    open: boolean;
-    handleClose: () => void;
+  contact: Contact;
+  open: boolean;
+  handleClose: () => void;
 }
 
 export default function ContactCard({ contact }: ContactCardProps) {
