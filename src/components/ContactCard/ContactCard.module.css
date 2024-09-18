@@ -4,7 +4,6 @@
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
     transition: box-shadow 0.2s ease;
     position: relative;
     width: 300px;
@@ -31,7 +30,7 @@
     color: #333;
 }
 
-.cardStyle .icon {
+.iconStyle {
     position: absolute;
     bottom: 15px;
     right: 15px;
