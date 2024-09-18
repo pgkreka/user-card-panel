@@ -20,7 +20,7 @@ export default function ContactModal({ contact, open, handleClose }: ContactModa
         {/* Header Section */}
         <Box className={styles.headerStyle}>
           <Box>
-            <Typography variant="h6" component="h2">
+            <Typography className={styles.modalStyleh2} variant="h6" component="h2">
               {contact.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">

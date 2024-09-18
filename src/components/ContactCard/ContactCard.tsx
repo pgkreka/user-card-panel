@@ -31,7 +31,7 @@ export default function ContactCard({ contact }: ContactCardProps) {
           <Typography color="text.secondary">E-mail: {contact.email}</Typography>
         </CardContent>
         <Box position="absolute" bottom={10} right={10}>
-          <div className="icon" onClick={handleOpen}>
+          <div className={styles.iconStyle} onClick={handleOpen}>
             <img src={supervisorIcon} alt="magnifier icon" />
           </div>
         </Box>
